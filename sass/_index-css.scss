@@ -1,0 +1,194 @@
+
+:root{
+    --primary-color:rgb(141, 119, 90);
+    --secondary-color:antiquewhite;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+
+
+nav{
+    position: fixed;
+    top: 0;
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    ul{
+        display: flex;
+        top:0px;
+        justify-content: end;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    ul li{
+        list-style: none;
+        text-align: center;
+    
+    }
+
+    ul li a{
+        display: block;
+        padding: 10px 1rem;
+    }
+    ul li a:hover{
+        background-color: var(--primary-color);
+        color: white;
+     }
+}
+
+
+section.head{
+    margin-top: 50px;
+    background: linear-gradient(360deg, var(--primary-color) 50%, white 50%, white 100% );
+   
+    figure{
+        width:25% ;
+        margin-left: 37.5%;
+    }
+    figure img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+
+#welcome-section{
+    text-align: center;
+    font-size: 1.3rem;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    p{
+        width: 100%;
+        display: block;
+        text-align: center;
+        span{
+            background-color: var(--secondary-color);
+        }
+    }
+
+
+    ul li{
+        list-style: none;
+        width: max-content;
+        display: inline;
+        margin-right: 0.5rem;
+    }
+
+    
+}
+
+
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    section{
+        margin: 60px 0;
+    }
+    #about{
+        background-color: rgb(221, 221, 221);
+        padding: 30px 2%;
+        .about_intro{
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                width: 45%;
+                margin: 0 20px;
+                font-size: 1.2rem;
+                text-align: justify; 
+            }
+            .p1::first-letter{
+                font-size: 3rem;
+                font-weight: bold;
+                color: var(--primary-color);
+            }
+        }
+        
+        
+    }
+
+
+    .about_skills{
+        margin-top: 60px;
+    }
+    .skills{
+        margin-left: 2%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        i{
+            font-size: 4rem;
+            color: var(--primary-color);
+        }
+        span{display: block; font-weight: bold;}
+    }
+    
+    .wp1 {
+        font-size: 1.2rem;
+        a{
+            padding: 1rem 2rem;
+            background-color: var(var(--primary-color));
+        }
+        div{
+        width:50%;
+        float: left;
+        }
+
+        figure{
+            width: 70%;
+            img{
+                width: 100%;
+                border: 1px solid black;
+                box-shadow:10px 5px 5px rgb(0, 0, 0); ;
+            }
+        }
+    }
+}
+    
+
+#certifications {
+   
+    figure{
+    width:100%;   
+    display: flex;
+    flex-wrap: wrap;}
+    img{
+        width: 45%;
+        margin: 1rem;
+        border: 1px solid;
+    }
+    img:nth-of-type(2){
+        transform: scale(0.95);
+    }
+}
+
+footer{
+          height: 2.5rem;
+          text-align: center;
+          padding-top:1rem ;
+          background-color: var(--primary-color);
+          color: white;
+      }
+
+
+.clearfix:after {
+        content:" "; 
+        display: table;
+        clear: both;
+}
