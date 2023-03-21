@@ -6,6 +6,9 @@ a {
   text-decoration: none;
   color: black; }
 
+h2 {
+  color: red; }
+
 nav {
   position: fixed;
   top: 0;
@@ -133,3 +136,5 @@ footer {
 
   #certifications img {
     width: 90%; } }
+
+/*# sourceMappingURL=styles.css.map */
