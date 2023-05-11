@@ -1,0 +1,207 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0%;
+  color: rgb(86, 86, 86);
+}
+
+:root {
+  --primary-color:#ad9e96;
+  --secondary-color:antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section.head {
+  padding-top: 150px;
+  height: 80vh;
+}
+section.head nav {
+  position: fixed;
+  top: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+section.head nav ul {
+  display: flex;
+  top: 0px;
+  justify-content: end;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+section.head nav ul li {
+  list-style: none;
+  text-align: center;
+}
+section.head nav ul li a {
+  display: block;
+  padding: 10px 1rem;
+  color: white;
+}
+section.head nav ul li a:hover {
+  background-color: #7a6d5f;
+  border-radius: 5px;
+  color: white;
+}
+section.head nav ul li a:active {
+  background-color: var(--primary-color);
+  color: white;
+}
+section.head figure {
+  width: 25%;
+  margin-left: 37.5%;
+}
+section.head figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+section.head #welcome-section {
+  text-align: center;
+  font-size: 1.3rem;
+}
+section.head #welcome-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+section.head #welcome-section p {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+section.head #welcome-section p span {
+  background-color: var(--secondary-color);
+}
+section.head #welcome-section ul li {
+  list-style: none;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+main section.width-content {
+  width: 90%;
+  margin: 0 auto;
+}
+main section {
+  margin: 40px 0;
+}
+main section h2 {
+  padding-top: 75px;
+  margin: 0;
+}
+main #about {
+  background-color: rgb(221, 221, 221);
+  padding: 0 1% 70px 0%;
+  border-radius: 5px;
+}
+main #about .about_intro, main #about .about_skills {
+  padding: 0 3%;
+}
+main #about .about_skills {
+  margin-top: 100px;
+}
+main #about .about_skills .skills {
+  margin: 0 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+main #about .about_skills .skills i {
+  margin-top: 20px;
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+main #about .about_skills .skills span {
+  display: block;
+  font-weight: bold;
+  color: rgb(86, 86, 86);
+}
+main #certifications ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+main #certifications ul li a {
+  color: rgb(0, 0, 0);
+}
+main #certifications ul li a:hover {
+  color: var(--primary-color);
+}
+main #projects .wp1 figure {
+  width: 70%;
+}
+main #projects .wp1 figure img {
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px rgb(84, 83, 83);
+}
+main #projects .wp1 .description_project {
+  padding: 1rem 0.5rem 1.5rem 2rem;
+  font-size: 1.2rem;
+}
+main #projects .wp1 .description_project hr {
+  height: 2px;
+  background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 25%, rgb(239, 239, 239) 100%);
+  border: none;
+}
+main #projects .wp1 .description_project a {
+  padding: 0.5rem 1rem;
+  clear: left;
+  background-color: var(--primary-color);
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-top: 60px;
+}
+
+footer {
+  height: 2.5rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 800px) {
+  section.head {
+    padding-top: 100px;
+  }
+  #about {
+    display: flex;
+  }
+  #about div:nth-of-type(1) {
+    width: 60%;
+  }
+  #about fieldset {
+    padding: 0 10px 10px 0;
+  }
+  #about .skills {
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+    display: unset;
+  }
+  #projects .wp1 div {
+    width: 45%;
+    float: left;
+  }
+}/*# sourceMappingURL=styles.css.map */

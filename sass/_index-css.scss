@@ -1,47 +1,71 @@
 
+
+html{ scroll-behavior: smooth;}
+body{
+   margin: 0%;
+   color: rgb(86, 86, 86);
+}
+
 :root{
-    --primary-color:rgb(141, 119, 90);
+   // --primary-color:rgb(66, 136, 153);
+   // --secondary-color:rgb(85, 132, 175);
+    --primary-color:#ad9e96;
     --secondary-color:antiquewhite;
+    
+    
 }
 
 a{
     text-decoration: none;
     color: black;
+   
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    background-color:rgb(255, 255, 255);
-    width: 100%;
-    ul{
-        display: flex;
-        top:0px;
-        justify-content: end;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-    }
-    ul li{
-        list-style: none;
-        text-align: center;
-    
-    }
 
-    ul li a{
-        display: block;
-        padding: 10px 1rem;
-    }
-    ul li a:hover{
-        background-color: var(--primary-color);
-        color: white;
-     }
-}
 
 
 section.head{
-    margin-top: 50px;
-    background: linear-gradient(360deg, var(--primary-color) 50%, white 50%, white 100% );
-   
+    padding-top: 150px;
+    height: 80vh;
+    //background: linear-gradient(360deg, var(--primary-color) 50%, white 50%, white 100% );
+   // background-color:#f7f7f7 ;
+    nav{
+        position: fixed;
+        top: 0;
+        background-color:var(--primary-color);
+        width: 100%;
+        
+        ul{
+            display: flex;
+            top:0px;
+            justify-content: end;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            
+        }
+        ul li{
+            list-style: none;
+            text-align: center;
+            
+        }
+    
+        ul li a{
+            display: block;
+            padding: 10px 1rem;
+            color: white;
+        }
+        ul li a:hover{
+            background-color:#7a6d5f;
+            border-radius: 5px;
+            color: white;
+         }
+        
+        ul li a:active{
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+    
     figure{
         width:25% ;
         margin-left: 37.5%;
@@ -50,130 +74,134 @@ section.head{
         width: 100%;
         border-radius: 50%;
     }
-}
-
-
-
-#welcome-section{
-    text-align: center;
-    font-size: 1.3rem;
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        font-style: italic;
-    }
-
-    p{
-        width: 100%;
-        display: block;
+    #welcome-section{
         text-align: center;
-        span{
-            background-color: var(--secondary-color);
+        font-size: 1.3rem;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-style: italic;
         }
-    }
-
-
-    ul li{
-        list-style: none;
-        width: max-content;
-        display: inline;
-        margin-right: 0.5rem;
-    }
-
     
+        p{
+            width: 100%;
+            display: block;
+            text-align: center;
+            span{
+                background-color: var(--secondary-color);
+            }
+        }
+    
+    
+        ul li{
+            list-style: none;
+            width: max-content;
+            display: inline;
+            margin-right: 0.5rem;
+        } 
+    }
 }
-
-
-
 
 main{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+
+    section.width-content{
+        width: 90%;
+        margin: 0 auto;
+    }
     section{
-        margin: 60px 0;
+        h2{padding-top: 75px; margin: 0;}
+        margin: 40px 0;
     }
+    
     #about{
+        
         background-color: rgb(221, 221, 221);
-        padding: 30px 2%;
-        .about_intro{
-            display: flex;
-            flex-wrap: wrap;
-            p{
-                width: 45%;
-                margin: 0 20px;
+        padding: 0 1% 70px 0%;
+        border-radius: 5px;
+        .about_intro, .about_skills {
+            padding: 0 3%;
+        }
+        .about_skills{
+            margin-top: 100px;
+        
+            .skills{
+                margin:0 2%  ;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+                i{  margin-top: 20px;
+                    font-size: 4rem;
+                    color: var(--primary-color);
+                }
+                span{display: block; font-weight: bold; color: rgb(86, 86, 86);
+                } 
+            }
+        }
+    }
+
+    #certifications {
+        ul li{
+         list-style-type: none;
+         margin-top: 10px;
+         padding: 0.5rem 1rem;
+         font-style:italic;
+             text-decoration: underline;
+         a{
+             color: rgb(0, 0, 0);
+         }
+         a:hover{
+             color: var(--primary-color);
+         }
+        }
+     }
+     
+    #projects{
+        .wp1 {
+            
+            figure{
+                width: 70%;
+                img{
+                    width: 100%;
+                    border: 1px solid black;
+                    box-shadow:10px 5px 5px rgb(84, 83, 83); ;
+                }
+            }
+            .description_project{
+                padding: 1rem 0.5rem 1.5rem 2rem ;
                 font-size: 1.2rem;
-                text-align: justify; 
+                
+                hr{
+                    
+                    height: 2px;
+                    background: linear-gradient(to right, var(--primary-color) 0%,var(--primary-color) 25%,  rgb(239, 239, 239)100%);
+                    border: none;
+
+                }
+                a{
+                    padding: 0.5rem 1rem;
+                    clear: left;
+                    background-color: var(--primary-color);
+                    color:white;
+                    width: fit-content;
+                    display: block;
+                    margin-top: 60px;
+                }
             }
-            .p1::first-letter{
-                font-size: 3rem;
-                font-weight: bold;
-                color: var(--primary-color);
-            }
-        }
-        
-        
-    }
 
 
-    .about_skills{
-        margin-top: 60px;
-    }
-    .skills{
-        margin-left: 2%;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        i{
-            font-size: 4rem;
-            color: var(--primary-color);
-        }
-        span{display: block; font-weight: bold;}
-    }
-    
-    .wp1 {
-        font-size: 1.2rem;
-        a{
-            padding: 1rem 2rem;
-            background-color: var(var(--primary-color));
-        }
-        div{
-        width:50%;
-        float: left;
-        }
 
-        figure{
-            width: 70%;
-            img{
-                width: 100%;
-                border: 1px solid black;
-                box-shadow:10px 5px 5px rgb(0, 0, 0); ;
             }
         }
-    }
-}
-    
-
-#certifications {
-   
-    figure{
-    width:100%;   
-    display: flex;
-    flex-wrap: wrap;}
-    img{
-        width: 45%;
-        margin: 1rem;
-        border: 1px solid;
-    }
-    img:nth-of-type(2){
-        transform: scale(0.95);
-    }
 }
 
 footer{
-          height: 2.5rem;
-          text-align: center;
-          padding-top:1rem ;
-          background-color: var(--primary-color);
-          color: white;
+    height: 2.5rem;
+    text-align: center;
+    padding:1rem 0 ;
+    background-color: var(--primary-color);
+    color: white;
       }
 
 

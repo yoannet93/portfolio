@@ -1,16 +1,30 @@
-@media only screen and (max-width:800px){
-    .about_intro {
-       
-        .p1{
-            background-color: red;
-            width: 120%;
+@media only screen and (min-width:800px){
+    section.head{
+        padding-top: 100px;
+    }
+    #about{
+       display: flex;
+       div:nth-of-type(1){
+        width: 60%;
+       }
+
+       fieldset{
+        padding: 0 10px 10px 0;
+       }
+       .skills{
+           column-gap: 60px;
+           display: unset;
         }
+    }
 
+    #projects{
+        .wp1 {
+            div{
+                width: 45%;
+                float: left;
+            }
 
+        }
     }
   
-
-    #certifications img{
-        width: 90%;
-    }
-}
+}   
