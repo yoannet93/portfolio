@@ -46,9 +46,8 @@ section.head nav ul li a {
 section.head nav ul li a:hover {
   background-color: #7a6d5f;
   border-radius: 5px;
-  color: white;
 }
-section.head nav ul li a:active {
+section.head nav ul li a:active, section.head nav .activo {
   background-color: var(--primary-color);
   color: white;
 }

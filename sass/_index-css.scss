@@ -54,13 +54,14 @@ section.head{
         ul li a:hover{
             background-color:#7a6d5f;
             border-radius: 5px;
-            color: white;
+            
          }
         
-        ul li a:active{
+        ul li a:active, .activo{
             background-color: var(--primary-color);
             color: white;
         }
+        
     }
     
     figure{
