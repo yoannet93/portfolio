@@ -21,9 +21,6 @@ a{
    
 }
 
-
-
-
 section.head{
     padding-top: 150px;
     height: 80vh;
@@ -158,6 +155,7 @@ main{
      }
      
     #projects{
+       
         .wp1 {
             
             figure{
@@ -165,7 +163,8 @@ main{
                 img{
                     width: 100%;
                     border: 1px solid black;
-                    box-shadow:10px 5px 5px rgb(84, 83, 83); ;
+                    //@include box-shado(10px 5px 5px red);
+                    box-shadow:10px 5px 5px rgb(84, 83, 83); 
                 }
             }
             .description_project{
