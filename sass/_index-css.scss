@@ -57,11 +57,12 @@ section.head{
             
          }
         
-        ul li a:active, .activo{
-            background-color: var(--primary-color);
-            color: white;
+       
         }
-        
+        ul li a.activo{
+            background-color:#7a6d5f;
+            border-radius: 5px;
+         }
     }
     
     figure{
