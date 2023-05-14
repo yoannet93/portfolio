@@ -21,7 +21,7 @@ const observer = new IntersectionObserver((entradas, observador)=>{
     }
    })
 }, {
-    threshold: 1, //para que todo el encabezado entre dentro de pantalla.
+    threshold: 0.1, //para que todo el encabezado entre dentro de pantalla. !!!!!si lo aumento deja de verse la seccion projects.
     rootMargin: "0px 0px -20% 0px" //establece los margenes del viewport
 });
 
