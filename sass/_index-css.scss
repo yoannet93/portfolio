@@ -54,15 +54,14 @@ section.head{
         ul li a:hover{
             background-color:#7a6d5f;
             border-radius: 5px;
-            
+            color: white;
          }
         
-       
-        }
         ul li a.activo{
             background-color:#7a6d5f;
             border-radius: 5px;
-         }
+            color: white;
+        }
     }
     
     figure{
@@ -98,6 +97,13 @@ section.head{
             display: inline;
             margin-right: 0.5rem;
         } 
+
+        ul li a.cv{
+            color: white;
+            background-color: black;
+            padding: 0.1rem 0.3rem;
+            border-radius: 50%;
+        }
     }
 }
 

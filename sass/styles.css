@@ -46,14 +46,12 @@ section.head nav ul li a {
 section.head nav ul li a:hover {
   background-color: #7a6d5f;
   border-radius: 5px;
-}
-section.head nav ul li a:active {
-  background-color: var(--primary-color);
   color: white;
 }
 section.head nav ul li a.activo {
   background-color: #7a6d5f;
   border-radius: 5px;
+  color: white;
 }
 section.head figure {
   width: 25%;
@@ -86,6 +84,12 @@ section.head #welcome-section ul li {
   width: max-content;
   display: inline;
   margin-right: 0.5rem;
+}
+section.head #welcome-section ul li a.cv {
+  color: white;
+  background-color: black;
+  padding: 0.1rem 0.3rem;
+  border-radius: 50%;
 }
 
 main {
